@@ -6,7 +6,7 @@ const Posts = ({ posts }) => {
   return (
     <section>
       <div className="title">
-        <h2> Everything @India🇮🇳 </h2> <div className="underline"> </div>
+        <h2>Anything @India🇮🇳 </h2> <div className="underline"> </div>
       </div>
       <div>
         {console.log(typeof posts, posts)}
