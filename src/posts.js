@@ -6,10 +6,9 @@ const Posts = ({ posts }) => {
   return (
     <section>
       <div className="title">
-        <h2>Anything @India🇮🇳 </h2> <div className="underline"> </div>
+        <h2>Anything about India </h2> <div className="underline"> </div>
       </div>
       <div>
-        {console.log(typeof posts, posts)}
         {posts.map((fact) => {
           return <Post key={fact.id} {...fact} />;
         })}

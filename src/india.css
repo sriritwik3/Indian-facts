@@ -37,7 +37,7 @@ Variables
     --clr-green-light: hsl(125, 71%, 66%);
     --clr-black: #222;
     --transition: all 0.3s linear;
-    --spacing: 0.1rem;
+    --spacing: 0.04rem;
     --radius: 0.25rem;
     --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -149,18 +149,23 @@ p {
     }
 }
 
-.btn {
+.menu-btn {
     background: var(--clr-primary-5);
     display: inline-block;
-    padding: 0.25rem 0.5rem;
+    padding: 0.5rem 0.5rem 0.25rem 0.5rem;
     border-radius: var(--radius);
     text-transform: capitalize;
     color: var(--clr-white);
     letter-spacing: var(--spacing);
     border-color: transparent;
     cursor: pointer;
+    margin-left: 85%;
     margin-top: 2rem;
-    font-size: 1.2rem;
+    font-size: 1.7rem;
+}
+
+.menu-btn:hover {
+    background: var(--clr-grey-1);
 }
 
 
@@ -173,11 +178,80 @@ Tours
 main {
     width: 90vw;
     max-width: var(--fixed-width);
-    margin: 5rem auto;
+    margin: 0 auto;
 }
 
 .loading {
     text-align: center;
+}
+
+.container {
+    width: 90vw;
+    margin: 1rem auto;
+    background: var(--clr-white);
+    border-radius: var(--radius);
+    padding: 2.5rem 2rem;
+    max-width: var(--fixed-width);
+    display: grid;
+    gap: 1rem 2rem;
+}
+
+.container h3 {
+    line-height: 1.2;
+    font-weight: 500;
+    color: var(--clr-primary-2);
+}
+
+@media screen and (min-width: 992px) {
+    .container {
+        display: grid;
+    }
+}
+
+.question {
+    padding: 1rem 1.5rem;
+    border: 2px solid var(--clr-grey-special);
+    margin-bottom: 1rem;
+    border-radius: var(--radius);
+    box-shadow: var(--light-shadow);
+}
+
+.question h4 {
+    text-transform: none;
+    line-height: 1.5;
+}
+
+.question p {
+    color: var(--clr-grey-5);
+    margin-bottom: 0;
+    margin-top: 0.5rem;
+}
+
+.question header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question header h4 {
+    margin-bottom: 0;
+    color: var(--clr-grey-1);
+}
+
+.question .btn {
+    border-color: transparent;
+    width: 2rem;
+    height: 2rem;
+    background: var(--clr-grey-9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 1rem;
+    align-self: center;
+    min-width: 2rem;
+    color: black;
 }
 
 .title {
