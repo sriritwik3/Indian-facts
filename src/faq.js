@@ -19,7 +19,7 @@ const Question = (props) => {
 };
 
 const Faq = () => {
-  const [faqs, setFaqs] = useState(faqData);
+  const [faqs] = useState(faqData);
 
   return (
     <main>
